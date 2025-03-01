@@ -9,7 +9,7 @@ public class VehiculoVistaPrincipal extends JFrame {
 
     public VehiculoVistaPrincipal() {
         setTitle("Gestión de Vehículos");
-        setSize(500, 400);
+        setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 

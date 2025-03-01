@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MotoVista extends JFrame {
-    private JTextField txtMarca, txtModelo, txtAño, txtManillar;
+    private JTextField txtMarca, txtModelo, txtAño, txtManillar, txtVelocidad;
     private JButton btnGuardar;
     private VehiculoVistaPrincipal mainView;
 
@@ -14,7 +14,7 @@ public class MotoVista extends JFrame {
         this.mainView = mainView;
         setTitle("Registrar Moto");
         setSize(300, 250);
-        setLayout(new GridLayout(5, 2));
+        setLayout(new GridLayout(6, 2));
 
         add(new JLabel("Marca:"));
         txtMarca = new JTextField();
@@ -32,6 +32,10 @@ public class MotoVista extends JFrame {
         txtManillar = new JTextField();
         add(txtManillar);
 
+        add(new JLabel("velocidad:"));
+        txtVelocidad = new JTextField();
+        add(txtVelocidad);
+
         btnGuardar = new JButton("Guardar");
         add(btnGuardar);
 
@@ -39,7 +43,7 @@ public class MotoVista extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String info = "Moto - Marca: " + txtMarca.getText() + ", Modelo: " + txtModelo.getText() +
-                        ", Año: " + txtAño.getText() + ", Manillar: " + txtManillar.getText();
+                        ", Año: " + txtAño.getText() + ", Manillar: " + txtManillar.getText() + ", Velocidad: " + txtVelocidad.getText();
                 mainView.agregarVehiculo(info);
                 dispose();
             }

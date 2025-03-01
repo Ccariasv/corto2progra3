@@ -13,20 +13,20 @@ public class VehiculoController {
     }
 
 
-    public void registrarAuto(String marca, String modelo, int año, int cantidadPuertas) {
-        String info = "Auto - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Puertas: " + cantidadPuertas;
+    public void registrarAuto(String marca, String modelo, int año, int cantidadPuertas, int velocidad) {
+        String info = "Auto - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Puertas: " + cantidadPuertas + ", Velocidad: " + velocidad;
         vehiculosRegistrados.add(info);
     }
 
 
-    public void registrarMoto(String marca, String modelo, int año, String tipoManillar) {
-        String info = "Moto - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Manillar: " + tipoManillar;
+    public void registrarMoto(String marca, String modelo, int año, String tipoManillar, int velocidad) {
+        String info = "Moto - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Manillar: " + tipoManillar + ", Velocidad: " + velocidad;
         vehiculosRegistrados.add(info);
     }
 
 
-    public void registrarCamion(String marca, String modelo, int año, double capacidadCarga) {
-        String info = "Camión - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Carga: " + capacidadCarga + " kg";
+    public void registrarCamion(String marca, String modelo, int año, double capacidadCarga, int velocidad) {
+        String info = "Camión - Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año + ", Carga: " + capacidadCarga + " kg" + ", Velocidad: " + velocidad;
         vehiculosRegistrados.add(info);
     }
 

@@ -15,6 +15,17 @@ public class Camion extends Vehiculo {
     public void setCapacidadCarga(int capacidadCarga) {
         this.capacidadCarga = capacidadCarga;
     }
+    @Override
+    public void acelerar() {
+        super.acelerar();
+        System.out.println("El camión aceleró lentamente.");
+    }
+
+    @Override
+    public void frenar() {
+        super.frenar();
+        System.out.println("El camión frenó con mucha distancia.");
+    }
 
     @Override
     public String mostrarInfo() {
